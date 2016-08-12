@@ -1,4 +1,18 @@
+// Backend Logic
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// Frontend Logic
+
 $(document).ready(function() {
+
+  $('#eyehurt').on('click', function (event) {
+    $("#suggestion-eyehurt").show();
+    $("#suggestion-frontend-warning").hide();
+    event.preventDefault();
+  });
 
   $('#next1').on('click', function (event) {
     $("#question-block-2").show();
@@ -12,12 +26,10 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
-
-
-  //
   $("form").submit(function(event) {
 
-    var name = $("input#name").val();
+    var inputName = $("input#name").val();
+    var name = capitalizeFirstLetter(inputName);
     var computer = $("input:radio[name=computer]:checked").val();
     var front = $("#front-vs-back").val();
     var job = $("#job").val();
@@ -40,8 +52,8 @@ $(document).ready(function() {
     if (front === "front-end") {
       frontend += 3;
     } else if (front === "back-end") {
-      php += 2;
-      net += 2;
+      php += 3;
+      net += 3;
     } else {
       frontend += 1;
       php += 1;
@@ -72,16 +84,32 @@ $(document).ready(function() {
     }
 
     if (color === "good") {
-      frontend += 2
+      frontend += 2;
     } else {
-      frontend -= 2
+      frontend -= 2;
     }
 
-    $("#question-block-3").hide();
-
-    alert("net: " + net + "php: " + php + "frontend: " + frontend);
-
-    $("#suggestion-frontend").show();
+    if (frontend >= php && frontend >= net && color === "bad") {
+      $("#main-container").hide();
+      $("#suggestion-frontend-warning").show();
+      document.body.style.backgroundImage = "url(img/css.jpg)"
+      $(".display-name").text(name);
+    } else if (frontend >= php && frontend >= net) {
+      $("#main-container").hide();
+      $("#suggestion-frontend").show();
+      document.body.style.backgroundImage = "url(img/css.jpg)"
+      $(".display-name").text(name);
+    } else if (php >= frontend && php >= net){
+      $("#main-container").hide();
+      $("#suggestion-php").show();
+      document.body.style.backgroundImage = "url(img/php.png)"
+      $(".display-name").text(name);
+    } else {
+      $("#main-container").hide();
+      $("#suggestion-net").show();
+      document.body.style.backgroundImage = "url(img/csharp.jpg)"
+      $(".display-name").text(name);
+    }
 
   event.preventDefault();
 

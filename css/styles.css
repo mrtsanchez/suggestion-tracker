@@ -23,8 +23,21 @@
   display: none;
 }*/
 
-.suggestion {
+/*customize response*/
+
+.suggestion-hide {
   display:none;
+  font-size: 2em;
+}
+
+.suggestion {
+  margin-top: 20%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /*customize header*/

@@ -10,16 +10,15 @@
     <title>Track Suggester</title>
   </head>
   <body>
-    <div class="container custom-header page-header">
+    <div id="main-container">
+      <div class="container custom-header page-header">
       <h1>What programming languaje should I learn?. <small>Take this little survey and get some feedback!</small>
     </div>
     <form class="form-horizontal">
     <div class="container" id="question-block-1">
-
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <!-- aqui iba el primer form -->
             <div class="panel panel-default panel-survey">
               <div class="panel-heading bg-primary">A little bit about yourself</div>
               <div class="panel-body">
@@ -80,7 +79,6 @@
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-          <!-- <form class="form-horizontal" id="career"> -->
             <div class="panel panel-default panel-survey">
               <div class="panel-heading bg-primary">Preferred career path.</div>
               <div class="panel-body">
@@ -91,7 +89,7 @@
                   <option value="dunno">I don't have a clue.</option>
                 </select>
 
-                <strong>where do you see yourself working in 5 months?</strong>
+                <strong>Where do you see yourself working in 5 months?</strong>
                 <select class="form-control survey-select" id="job">
                   <option value="c-net">I'm more interested in working for an enterprise-level company.</option>
                   <option value="agency">I'd like to work for an agency that builds websites for clients.</option>
@@ -127,7 +125,6 @@
           <div class="panel panel-default panel-survey">
             <div class="panel-heading bg-primary">Personal Skills</div>
             <div class="panel-body">
-              <!-- <form class="form-horizontal"> -->
               <strong>How do you feel towards math?</strong>
               <select class="form-control survey-select" id="math">
                 <option value="love">I love math. Its one of my life's deepest passions and hobbies.</option>
@@ -175,12 +172,68 @@
       </div>
     </div>  <!-- End of third survey question block-->
   </form>
+</div> <!-- End of main container (will hide the survey)-->
+  <div class="container suggestion suggestion-hide" id="suggestion-frontend">
+    <div class="jumbotron">
+      <p>
+        Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey.
+      </p>
+      <p>
+        You should choose the<strong> Front-End track</strong> and start building beautiful and responsive websites!
+      </p>
+    </div>
+  </div>
 
-  <div class="container suggestion" id="suggestion-frontend">
-    <div class="panel panel-default">
-      <div class="panel-body">
-      Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey. It seems that you are inclined towards a front-end track, nice choice!
-      </div>
+  <div class="container suggestion suggestion-hide" id="suggestion-frontend-warning">
+    <div class="jumbotron">
+      <p>
+        Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey.
+      </p>
+      <p>
+        It seems that you are inclined towards the <strong> Front-End track.</strong> But be warned, you should pay extra attention in the design class next month.
+      </p>
+      <p>
+        Why? Well, see for yourself what happens when we apply to this website the color scheme that you (poorly) choose:
+      </p>
+      <p>
+        <button class="btn btn-default" id="eyehurt" role="button">Button</button>
+      </p>
+    </div>
+  </div>
+
+  <div class="container suggestion suggestion-hide" id="suggestion-eyehurt">
+    <div class="jumbotron">
+      <p>
+        Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey.
+      </p>
+      <p>
+        It seems that you are inclined towards the <strong> Front-End track.</strong> But be warned, you should pay extra attention in the design class next month.
+      </p>
+      <p>
+        Why? Well, see for yourself what happens when we apply to this website the color scheme that you (poorly) choose:
+      </p>
+    </div>
+  </div>
+
+  <div class="container suggestion suggestion-hide" id="suggestion-php">
+    <div class="jumbotron">
+      <p>
+      <h2>Hi <span class="display-name"></span>! </h2>Thank you for taking the Track Suggestion Survey.
+      </p>
+      <p>
+        You should choose the <strong>PHP and Drupal</strong> track and build awesome websites!
+      </p>
+    </div>
+  </div>
+
+  <div class="container suggestion suggestion-hide" id="suggestion-net">
+    <div class="jumbotron">
+      <p>
+        Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey.
+      </p>
+      <p>
+        You should choose the <strong>C# and .NET</strong> track and enjoy the corporate life!
+      </p>
     </div>
   </div>
 
