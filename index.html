@@ -13,24 +13,111 @@
     <div class="container custom-header page-header">
       <h1>What programming languaje should I learn?. <small>Take this little survey and get some feedback!</small>
     </div>
+    <form class="form-horizontal">
     <div class="container" id="question-block-1">
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <!-- aqui iba el primer form -->
+            <div class="panel panel-default panel-survey">
+              <div class="panel-heading bg-primary">A little bit about yourself</div>
+              <div class="panel-body">
+                  <div class="form-group">
+                    <label for="name" class="col-sm-4 control-label">What's your name?</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                  </div>
+              </div>
+              <div class="panel-footer text-right">
+                <button class="btn btn-primary" id="next1" role="button">Next</button>
+              </div>
+            </div>
+          <!-- </form> -->
+        </div>
+        <div class="col-md-3"></div>
+      </div> <!-- End of 1st row -->
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+            33%
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>  <!-- End of first survey question block-->
+
+    <div class="container" id="question-block-2">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <!-- <form class="form-horizontal" id="career"> -->
+            <div class="panel panel-default panel-survey">
+              <div class="panel-heading bg-primary">Preferred career path.</div>
+              <div class="panel-body">
+                  <strong>What kind of computer do you use?</strong>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="computer" value="mac" checked>
+                      Mac
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="computer" value="windows">
+                      Windows
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="computer" value="linux">
+                      Linux
+                    </label>
+                  </div>
+                </div>
+              <div class="panel-footer text-right">
+                <button class="btn btn-primary" id="next2" role="button">Next</button>
+              </div>
+            </div>
+          <!-- </form> -->
+        </div>
+        <div class="col-md-3"></div>
+      </div> <!-- End of row -->
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+            66%
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>  <!-- End of second survey question block-->
+
+    <div class="container" id="question-block-3">
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
           <div class="panel panel-default panel-survey">
-            <div class="panel-heading bg-primary">Questions about you</div>
+            <div class="panel-heading bg-primary">Personal Skills</div>
             <div class="panel-body">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="name" class="col-sm-4 control-label">What's your name?</label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                </div>
-              </form>
-            </div>
+              <!-- <form class="form-horizontal"> -->
+              <strong>How do you feel towards math?</strong>
+              <select class="form-control" id="math">
+                <option value="love">I love math. Its one of my life's deepest passions and hobbies.</option>
+                <option value="meh">It's not my favorite, but I can deal with it.</option>
+                <option value="hate">Makes my brain hurt. I don't even know what I don't know.</option>
+              </select>
+              </div>
+
             <div class="panel-footer text-right">
-              <button type="submit" class="btn btn-primary">Next</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>
@@ -40,73 +127,23 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
           <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
-            33%
+          <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+            100%
           </div>
           </div>
-        </div>
-      </div>
-    </div>  <!-- End of first survey question block-->
-
-    <div class="container" id="question-block-2">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="panel panel-default panel-survey">
-            <div class="panel-heading bg-primary">Questions about you</div>
-            <div class="panel-body">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="name" class="col-sm-4 control-label">What's your name?</label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                </div>
-              </form>
-            </div>
-            <div class="panel-footer text-right">
-              <button type="submit" class="btn btn-primary">Next</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3"></div>
-      </div> <!-- End of row -->
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="progress-bar survey-progress" role="progressbar" style="width: 66%;">66%</div>
-        </div>
-      </div>
-    </div>  <!-- End of second survey question block-->
-    <div class="container" id="question-block-3">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="panel panel-default panel-survey">
-            <div class="panel-heading bg-primary">Questions about you</div>
-            <div class="panel-body">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label for="name" class="col-sm-4 control-label">What's your name?</label>
-                    <div class="col-sm-8">
-                      <input type="text" class="form-control" id="name">
-                    </div>
-                </div>
-              </form>
-            </div>
-            <div class="panel-footer text-right">
-              <button type="submit" class="btn btn-primary">Next</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3"></div>
-      </div> <!-- End of row -->
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <div class="progress-bar survey-progress" role="progressbar" style="width: 100%;">100%</div>
         </div>
       </div>
     </div>  <!-- End of third survey question block-->
+  </form>
+
+  <div class="container" id="suggestion">
+    <div class="panel panel-default">
+      <div class="panel-body">
+      Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey. 
+      </div>
+    </div>
+  </div>
+
+
   </body>
 </html>
