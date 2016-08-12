@@ -11,6 +11,14 @@ $(document).ready(function() {
   $('#eyehurt').on('click', function (event) {
     $("#suggestion-eyehurt").show();
     $("#suggestion-frontend-warning").hide();
+    document.body.style.background = "#5EFF01";
+    event.preventDefault();
+  });
+
+  $('#goback').on('click', function (event) {
+    $("#suggestion-eyehurt").hide();
+    $("#suggestion-frontend-warning").show();
+    document.body.style.backgroundImage = "url(img/css.jpg)";
     event.preventDefault();
   });
 
@@ -92,22 +100,22 @@ $(document).ready(function() {
     if (frontend >= php && frontend >= net && color === "bad") {
       $("#main-container").hide();
       $("#suggestion-frontend-warning").show();
-      document.body.style.backgroundImage = "url(img/css.jpg)"
+      document.body.style.backgroundImage = "url(img/css.jpg)";
       $(".display-name").text(name);
     } else if (frontend >= php && frontend >= net) {
       $("#main-container").hide();
       $("#suggestion-frontend").show();
-      document.body.style.backgroundImage = "url(img/css.jpg)"
+      document.body.style.backgroundImage = "url(img/css.jpg)";
       $(".display-name").text(name);
     } else if (php >= frontend && php >= net){
       $("#main-container").hide();
       $("#suggestion-php").show();
-      document.body.style.backgroundImage = "url(img/php.png)"
+      document.body.style.backgroundImage = "url(img/php.png)";
       $(".display-name").text(name);
     } else {
       $("#main-container").hide();
       $("#suggestion-net").show();
-      document.body.style.backgroundImage = "url(img/csharp.jpg)"
+      document.body.style.backgroundImage = "url(img/csharp.jpg)";
       $(".display-name").text(name);
     }
 

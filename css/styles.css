@@ -19,9 +19,9 @@
   margin-bottom: 20px;
 }
 
-/*#question-block-2, #question-block-3 {
+#question-block-2, #question-block-3 {
   display: none;
-}*/
+}
 
 /*customize response*/
 
@@ -38,6 +38,20 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+
+#suggestion-eyehurt {
+  color: #FE0000;
+}
+
+#suggestion-eyehurt .jumbotron {
+    background-color: #FF00FF;
+}
+
+#suggestion-eyehurt .btn-default {
+  color: #01C3FF;
+  background-color: #FF6801;
+  border-color: #5EFF01;
 }
 
 /*customize header*/
