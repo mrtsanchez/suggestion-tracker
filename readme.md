@@ -14,7 +14,7 @@ This is a website created using Bootstrap framework and JavaScript. It will allo
 
 ## Github Page
 
-You can check this page online at Github Pages: https://mrtsanchez.github.io/track-suggester/
+You can check this page online at Github Pages: https://mrtsanchez.github.io/suggestion-tracker/
 
 ### License
 
