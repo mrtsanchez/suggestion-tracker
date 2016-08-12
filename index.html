@@ -29,6 +29,31 @@
                         <input type="text" class="form-control" id="name">
                       </div>
                   </div>
+                  <div class="form-group">
+                    <div class="col-sm-4 control-label">
+                      <strong>What kind of computer do you use?</strong>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="radio">
+                      <label>
+                        <input type="radio" name="computer" value="mac">
+                        Mac
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="computer" value="windows">
+                        Windows
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="computer" value="linux">
+                        Linux
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="panel-footer text-right">
                 <button class="btn btn-primary" id="next1" role="button">Next</button>
@@ -59,26 +84,21 @@
             <div class="panel panel-default panel-survey">
               <div class="panel-heading bg-primary">Preferred career path.</div>
               <div class="panel-body">
-                  <strong>What kind of computer do you use?</strong>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="computer" value="mac" checked>
-                      Mac
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="computer" value="windows">
-                      Windows
-                    </label>
-                  </div>
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="computer" value="linux">
-                      Linux
-                    </label>
-                  </div>
-                </div>
+                <strong>Do you like to focus more on front-end or banck-end development?</strong>
+                <select class="form-control survey-select" id="front-vs-back">
+                  <option value="front-end">I enjoy more the front-end.</option>
+                  <option value="back-end">I'm most definitely back-end.</option>
+                  <option value="dunno">I don't have a clue.</option>
+                </select>
+
+                <strong>where do you see yourself working in 5 months?</strong>
+                <select class="form-control survey-select" id="job">
+                  <option value="c-net">I'm more interested in working for an enterprise-level company.</option>
+                  <option value="agency">I'd like to work for an agency that builds websites for clients.</option>
+                  <option value="freelance">I would like to start a freelancing career.</option>
+                </select>
+
+              </div>
               <div class="panel-footer text-right">
                 <button class="btn btn-primary" id="next2" role="button">Next</button>
               </div>
@@ -109,12 +129,32 @@
             <div class="panel-body">
               <!-- <form class="form-horizontal"> -->
               <strong>How do you feel towards math?</strong>
-              <select class="form-control" id="math">
+              <select class="form-control survey-select" id="math">
                 <option value="love">I love math. Its one of my life's deepest passions and hobbies.</option>
                 <option value="meh">It's not my favorite, but I can deal with it.</option>
                 <option value="hate">Makes my brain hurt. I don't even know what I don't know.</option>
               </select>
+
+              <div class="form-group">
+                <div class="col-sm-4 control-label">
+                  <strong>Which of these color schemes will you use in your website?:</strong>
+                </div>
+                <div class="col-sm-8">
+                  <div class="radio">
+                  <label>
+                    <input type="radio" name="color" value="good">
+                      <img src="img/bad-colorpallet.png" class="image-responsive" />
+                  </label>
+                </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="color" value="bad">
+                        <img src="img/nice-colorpallet.png" class="image-responsive" />
+                    </label>
+                  </div>
+                </div>
               </div>
+            </div>
 
             <div class="panel-footer text-right">
               <button type="submit" class="btn btn-primary">Submit</button>
@@ -136,10 +176,10 @@
     </div>  <!-- End of third survey question block-->
   </form>
 
-  <div class="container" id="suggestion">
+  <div class="container suggestion" id="suggestion-frontend">
     <div class="panel panel-default">
       <div class="panel-body">
-      Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey. 
+      Hi <span class="display-name"></span>! Thank you for taking the Track Suggestion Survey. It seems that you are inclined towards a front-end track, nice choice!
       </div>
     </div>
   </div>

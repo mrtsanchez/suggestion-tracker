@@ -19,14 +19,23 @@ $(document).ready(function() {
 
     var name = $("input#name").val();
     var computer = $("input:radio[name=computer]:checked").val();
+    var front = $("#front-vs-back").val();
+    var job = $("#job").val();
     var math = $("#math").val();
+    var color = $("input:radio[name=color]:checked").val();
 
-    alert(name + computer + math);
+
+    alert(name + computer + front + job + math + color);
 
     $("#question-block-3").hide();
-    $("#suggestion").show();
 
     $(".display-name").text(name);
+
+
+    $("#suggestion-frontend").show();
+
+
+
 
   event.preventDefault();
 
