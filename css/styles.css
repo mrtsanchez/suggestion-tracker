@@ -1,7 +1,7 @@
 /*customize survey*/
 
 #question-block-1, #question-block-2, #question-block-3 {
-    background-color: #DBD9D9;
+  background-color: #DBD9D9;
 }
 
 .panel-survey {
@@ -35,9 +35,9 @@
 }
 
 body {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #suggestion-eyehurt {
@@ -45,7 +45,7 @@ body {
 }
 
 #suggestion-eyehurt .jumbotron {
-    background-color: #FF00FF;
+  background-color: #FF00FF;
 }
 
 #suggestion-eyehurt .btn-default {
